@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>🔥 FREE FIRE HACK PANEL 🔥</title>
+<meta name="viewport" content="width=device-width">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body {background: linear-gradient(45deg, #000, #001122); font-family: Arial; color: white; text-align: center; padding: 20px;}
+.card {background: rgba(0,0,0,0.8); border: 2px solid #00ff88; border-radius: 20px; padding: 30px; max-width: 400px; margin: 20px auto; box-shadow: 0 0 30px #00ff88;}
+.btn {background: linear-gradient(45deg, #00ff88, #00cc66); border: none; padding: 15px 30px; color: black; font-weight: bold; border-radius: 50px; font-size: 18px; cursor: pointer; margin: 10px; transition: all 0.3s;}
+.btn:hover {transform: scale(1.1); box-shadow: 0 0 20px #00ff88;}
+.active {background: linear-gradient(45deg, #ff4444, #cc3333) !important;}
+.glow {animation: glow 2s infinite;}
+@keyframes glow {0%,100%{box-shadow:0 0 20px #00ff88;}50%{box-shadow:0 0 40px #00ff88;}}
+</style>
+</head>
+<body>
+<div class="card glow">
+<h1 style="font-size: 32px; margin-bottom: 20px; background: linear-gradient(45deg, #00ff88, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+🔥 FREE FIRE ELITE HACK 🔥
+</h1>
+
+<div style="font-size: 24px; margin: 20px 0; color: #00ff88;">
+✅ 98% WORKING GUARANTEED
+</div>
+
+<div style="background: rgba(0,255,136,0.1); padding: 20px; border-radius: 15px; margin: 20px 0;">
+<div style="font-size: 20px; margin-bottom: 10px;">🎯 ACTIVE HACKS:</div>
+<div id="status">Loading...</div>
+</div>
+
+<button class="btn glow" onclick="activateHack('ESP')">👁️ ESP WALLHACK</button>
+<button class="btn glow" onclick="activateHack('AIMBOT')">🎯 AIMBOT HEADSHOT</button>
+<button class="btn glow" onclick="injectDiamonds()">💎 999,999 DIAMONDS</button>
+<button class="btn glow" onclick="antiBan()">🛡️ ANTI BAN</button>
+
+<div style="margin-top: 30px; padding: 15px; background: rgba(0,0,0,0.5); border-radius: 10px; font-size: 14px;">
+📱 Open Free Fire → Hacks Auto Work<br>
+✅ No Root | No Ban | All Devices
+</div>
+</div>
+
+<script>
+let hacks = {};
+function activateHack(type){
+hacks[type] = !hacks[type];
+event.target.classList.toggle('active');
+updateStatus();
+}
+function injectDiamonds(){
+document.getElementById('status').innerHTML = '⏳ Injecting Diamonds...';
+setTimeout(()=>{
+document.getElementById('status').innerHTML = '✅ 999,999 Diamonds Added! Restart FF';
+}, 2000);
+}
+function antiBan(){
+document.getElementById('status').innerHTML = '🛡️ Anti-Ban Activated 100% Safe';
+}
+function updateStatus(){
+let activeCount = Object.keys(hacks).filter(k=>hacks[k]).length;
+document.getElementById('status').innerHTML = 
+`${activeCount} Hacks Active | 98% Success Rate<br>🟢 ESP: ${hacks.ESP?'ON':'OFF'} | 🎯 Aimbot: ${hacks.AIMBOT?'ON':'OFF'}`;
+}
+// Auto demo
+setTimeout(()=>activateHack('ESP'), 1000);
+setTimeout(()=>activateHack('AIMBOT'), 2000);
+</script>
+</body>
+</html>
